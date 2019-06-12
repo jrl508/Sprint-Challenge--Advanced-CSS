@@ -1,1 +1,21 @@
 // Mixins Here
+.btn-style(@btn-color, @btn-font-col){
+    height: 2em;
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.8em;
+    border-style: none;
+    background-color: @btn-color;
+    color:@btn-font-col;
+    border-radius: 5px;
+
+    &:hover {
+        font-size: 2em;
+        width: 35%;
+        background-color: whitesmoke;
+        color: rgb(14, 138, 187);
+        border: 1px solid rgb(14, 138, 187);
+        transition: all .3s
+    }
+
+}
